@@ -1,0 +1,131 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+*{
+  font-size: large;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+  height: 8vh;
+  width: 100vw;
+  background-color: green;
+  position: fixed;
+}
+nav > span{
+  color: white;
+  text-align: center;
+  text-decoration: dashed;
+}
+.logo{
+  height: 15vh;
+  width: 15vw;
+  margin: 2px;
+}
+/* #image-container{
+  transform: translate(55vw,0vh);
+} */
+#sidebar{
+  margin-top: 50px;
+  width: 45vw;
+  height: 60vh;
+  border-radius: 5px 5px 15px 15px;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px -3px 18px green;
+  position: fixed;
+}
+ul > li{
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 15px;
+}
+button{
+  width: 5vw;
+  height: 5vh;
+  background-color: white;
+  font-size: larger;
+  font-family: algerian;
+  color: darkred;
+  border: 1px solid darkred;
+  position: relative;
+  display: flex;
+  float: inline-start;
+}
+.close{
+  transform: translate(-45vw,0vh);
+  transition: transform 1s;
+}
+.open{
+  transform: translate(0vw,0vh);
+  transition: transform 1s;
+}
+#info{
+
+  display: flex;
+  float: right;
+  flex-direction: column;
+  font-size: large;
+  width: auto;
+  border: 1px solid grey;
+  height: auto;
+  margin: 0px;
+  margin-top: 15px;
+  border-radius: 28px;
+  
+}
+#main{
+  display: flex;
+}
+#sub{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  transform: translate(15vw,7vh);
+}
+#company{
+  font-family: algerian;
+  color: green;
+}
+#img{
+  border: 2px solid rgb(138, 16, 132);
+  border-radius: 25px 25px 15px 15px;
+}
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  color: brown;
+  font-size: larger;
+  
+}
+@media screen and (max-width:550px) {
+  #sidebar{
+    margin-top: 20px;
+    width: 70vw;
+    height: 100vh;
+    border-radius: 5px 5px 15px 15px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px -3px 18px green;
+    position: fixed;
+  }
+  .close{
+    transform: translate(-72vw,0vh);
+    transition: transform 1s;
+  }
+  .open{
+    transform: translate(0vw,0vh);
+    transition: transform 1s;
+  }
+  button{
+    float: inline-end;
+    width: 25vw;
+  }
+}
